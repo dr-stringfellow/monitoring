@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dealer</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="css/dealermon.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/slick.js"></script>
+  <script type="text/javascript" src="http://spin.js.org/spin.min.js"></script>
+  <script type="text/javascript" src="js/tracker.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script type="text/javascript" src="js/tracker_test.js"></script>
+  <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+  <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+  <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+  <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+</head>
+<body>
+  <header id="header">
+      <h1 id="pageTitle">Dealer transfer monitoring</h1>
+  </header>
+  <main id="main">
+    <nav id="divisions">
+    </nav>
+    <div id="SummaryBox">      
+      <div id="Wrapper1">
+	<div id="Summary"></div>
+      </div>
+      <div id="Wrapper1">
+	<div id="SiteOverview"></div>
+      </div>
+    </div>  
+    <div id="GaugeBox">      
+      <div id="Wrapper2" class="slider demo">
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      initPage();
+      $('.demo').slick({
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      });
+      });
+    </script>
+  </main>
+  </body>
+</html>
+
+ 
